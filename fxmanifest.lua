@@ -4,11 +4,11 @@ game {'gta5'}
 author 'Simple Team'
 lua54 'yes'
 
-client_scripts {
+client_script {
     'client/client.lua'
 }
 
-server_scripts {
+server_script {
     'server/server.lua'
 }
 
