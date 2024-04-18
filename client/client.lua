@@ -9,6 +9,7 @@ AddEventHandler('simple:healcard',function()
     lib.notify({
         title = 'SUCCESS',
         description = 'Your health has been charged to max!',
+        position = 'top',
         type = 'success'
     })
     TriggerServerEvent('healcard:healcarddelete') 
@@ -20,6 +21,7 @@ AddEventHandler('simple:armourcard',function()
     lib.notify({
         title = 'SUCCESS',
         description = 'Your armour has been charged to max!',
+        position = 'top',
         type = 'success'
     })
     TriggerServerEvent('armourcard:armourcarddelete') 
