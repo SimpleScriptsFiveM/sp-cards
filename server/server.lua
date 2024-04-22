@@ -1,5 +1,3 @@
-ESX = exports['es_extended']:getSharedObject()
-
 ESX.RegisterUsableItem('healcard', function(source)
     TriggerClientEvent('simple:healcard', source)
 end)
