@@ -1,5 +1,5 @@
-RegisterNetEvent('simple:healcard')
-AddEventHandler('simple:healcard',function()
+RegisterNetEvent('sp:healcard')
+AddEventHandler('sp:healcard',function()
     local playersource = PlayerPedId()
     SetEntityHealth(playersource, 200)
     lib.notify({
@@ -11,8 +11,8 @@ AddEventHandler('simple:healcard',function()
     TriggerServerEvent('sp:delhealcard') 
 end)
 
-RegisterNetEvent('simple:armourcard')
-AddEventHandler('simple:armourcard',function()
+RegisterNetEvent('sp:armourcard')
+AddEventHandler('sp:armourcard',function()
     local playersource = PlayerPedId()
     SetPedArmour(playersource, 200)
     lib.notify({
