@@ -1,8 +1,4 @@
-ESX = exports['es_extended']:getSharedObject()
-
 RegisterNetEvent('simple:healcard')
-RegisterNetEvent('simple:armourcard')
-
 AddEventHandler('simple:healcard',function()
     local playersource = PlayerPedId()
     SetEntityHealth(playersource, 200)
@@ -12,9 +8,10 @@ AddEventHandler('simple:healcard',function()
         position = 'top',
         type = 'success'
     })
-    TriggerServerEvent('healcard:healcarddelete') 
+    TriggerServerEvent('sp:delhealcard') 
 end)
 
+RegisterNetEvent('simple:armourcard')
 AddEventHandler('simple:armourcard',function()
     local playersource = PlayerPedId()
     SetPedArmour(playersource, 200)
@@ -24,5 +21,5 @@ AddEventHandler('simple:armourcard',function()
         position = 'top',
         type = 'success'
     })
-    TriggerServerEvent('armourcard:armourcarddelete') 
+    TriggerServerEvent('sp:delarmourcard') 
 end)
