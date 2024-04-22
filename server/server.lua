@@ -1,9 +1,9 @@
 ESX.RegisterUsableItem('healcard', function(source)
-    TriggerClientEvent('simple:healcard', source)
+    TriggerClientEvent('sp:healcard', source)
 end)
 
 ESX.RegisterUsableItem('armourcard', function(source)
-    TriggerClientEvent('simple:armourcard', source)
+    TriggerClientEvent('sp:armourcard', source)
 end)
 
 RegisterServerEvent("sp:delhealcard")
